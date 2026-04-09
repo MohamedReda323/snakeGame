@@ -10,7 +10,6 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: #E3F2FD;
-
 }
 
 .wrapper {
@@ -21,6 +20,8 @@ body {
     flex-direction: column;
     border-radius: 5px;
     background: #293447;
+    position: relative;
+    /* مهم */
 }
 
 .game-details {
@@ -48,6 +49,21 @@ body {
     background: #60cbff;
 }
 
+/* 🔁 زرار Replay */
+#replayBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    /* 🔥 مخفي في البداية */
+    z-index: 10;
+}
+
+/* التحكم */
 .controls {
     display: none;
     justify-content: space-between;
